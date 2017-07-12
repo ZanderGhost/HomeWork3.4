@@ -16,7 +16,7 @@ def length_convert(length):
                                            fromLengthUnit='Miles', toLengthUnit='Kilometers')
 
 def main():
-    file_path = 'travel.txt'
+	file_path = input('Введите путь к файлу:')
     list_data = read_file(file_path)
     sum_length = 0
     for item in list_data:

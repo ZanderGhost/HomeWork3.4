@@ -15,7 +15,7 @@ def currency_convert(from_currency, amount_currency):
                                        amount=amount_currency, rounding=True)
 
 def main():
-    file_path = 'currencies.txt'
+    file_path = input('Введите путь к файлу:')
     list_data = read_file(file_path)
     sum_rub = 0
     for item in list_data:

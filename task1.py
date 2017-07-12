@@ -12,7 +12,7 @@ def temper_convert(amount_temper):
     return client.service.ConvertTemp(Temperature=amount_currency, FromUnit='degreeFahrenheit', ToUnit='degreeCelsius')
 
 def main():
-    file_path = 'temps.txt'
+    file_path = input('Введите путь к файлу:')
     list_data = read_file(file_path)
     sum_temp = 0
     for item in list_data:
